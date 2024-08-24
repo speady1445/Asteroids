@@ -22,6 +22,8 @@ def main() -> None:
             if event.type == pygame.QUIT:
                 return
 
+        player.update(delta_time)
+
         screen.fill((0, 0, 0))
         player.draw(screen)
         pygame.display.flip()
